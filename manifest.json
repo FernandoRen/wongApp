@@ -1,0 +1,14 @@
+{
+    "name": "PWA Fernando de Jesus Soria",
+    "short_name" : "PWA",
+    "description" : "aplicacion pwa de curso aplicaciones web progresivas",
+    "background_color": "#FFF",
+    "theme_color": "#333",
+    "orientation":"portrait",
+    "display":"standalone",
+    "start_url":"./index.html?utm_source=web_app_manifest",
+    "scope":"./",
+    "lang":"es-MX"
+
+
+}
