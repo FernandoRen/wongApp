@@ -82,6 +82,7 @@ self.addEventListener("install", e => {
     caches.open("cache-v1")
         .then(cache => {
             cache.addAll([
+                './',
                 './index.html',
                 './css/style.css',
                 './css/normalize.css',
