@@ -5,7 +5,6 @@ const CACHE_NAME = 'v1_cache_awp';
 //configurar los archivos del cache
 
 var urlToCache = [
-    './',
     './css/style.css',
     './css/normalize.css',
     './img/close.png',
@@ -82,20 +81,15 @@ self.addEventListener("install", e => {
     caches.open("cache-v1")
         .then(cache => {
             cache.addAll([
-                './',
-                './index.html',
-                './css/style.css',
-                './css/normalize.css',
-                './img/close.png',
-                './img/Microsoft_Azure.svg.png',
-                './img/microsoft-logo.png',
-                './img/Microsoft-slide.jpg',
-                './img/windows-logo.png',
-                './img/xbox-logo.jpg',
-                './img/menu-logo.png',
-                './video/azure_video.mp4',
-                './video/windows_video.mp4',
-                './video/Xbox_videos.mp4'
+                'index.html',
+                'css/style.css',
+                'css/normalize.css',
+                'img/close.png',
+                'img/Microsoft_Azure.svg.png',
+                'img/microsoft-logo.png',
+                'img/Microsoft-slide.jpg',
+                'img/windows-logo.png',
+                'img/xbox-logo.jpg'
             ])
         });
     e.waitUntil(cacheProm);
